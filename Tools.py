@@ -40,5 +40,8 @@ def BruteForcer():
             print("Please enter a valid answer! eg: yes or no!!")
     print("You have 10 seconds to open the window with the auth to crack!!!!!! LETS GOOOOOOOOOOOO!!!!!!!!!!!")
     print("Press any letter to skip 1 second")
-    wait(10)
-    key.input("")
+    ifkey = key.input()
+    if ifkey != null:
+        wait("1")
+    else:
+        wait("10")
