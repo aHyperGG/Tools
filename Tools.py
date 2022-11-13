@@ -5,8 +5,8 @@ import hoting
 
 #Ping Sweeping!
 def pingsweep():
-	is_prefix = input("Is the ip prefix 192.168?: ")
-    while is_prefix.lower != null:
+    is_prefix = input("Is the ip prefix 192.168?: ")
+    while is_prefix.lower != None:
         if is_prefix.lower == "yes":
                 prefix = is_prefix
                 break
@@ -16,8 +16,8 @@ def pingsweep():
             break
         else:
             print("Please Enter a valid answer ex: yes or no")
-    ping(prefix)
-    ping(is_prefix)
+    #ping(prefix) Un-Comment This later
+    #ping(is_prefix)
 # To be continued
 
 #BruteForcing!
@@ -28,17 +28,17 @@ def BruteForcer():
         file_path = input("Please enter the path of the file: ")
     elif Hello.lower == "no":
         print("Its Okay no worries, for now i haven't coded this part of the progrom sorry!, i suggest you come back with a list, bye! Have a nice Day!")
-    file = open(file_path, r)
+    file = open(file_path, "r")
     list = (file.read())
     ready = input("Ready?")
     if ready.lower == "yes":
-        print("LETS GOOO BEACUSE IM "hotness()"!!")
+        print("LETS GOOO BEACUSE IM ", hoting.hotness(), "!!")
     elif ready.lower == "no":
-        ready = input("Tell me when your ready cause "hotness()" ex:just write out ready!")
+        ready = input("Tell me when your ready cause ", hoting.hotness(), " ex:just write out ready!")
     else:
-        while ready.lower != "yes" or "no"
+        while ready.lower != "yes" or "no":
             print("Please enter a valid answer! eg: yes or no!!")
     print("You have 10 seconds to open the window with the auth to crack!!!!!! LETS GOOOOOOOOOOOO!!!!!!!!!!!")
     print("Press any letter to skip 1 second")
-    wait(10)
+    time.wait(10)
     input("")
